@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMaxScore(arr) {
+        let max = arr[0];
+        for (let i = 0; i< arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    };
+
+
+    let arrSoNguyen = [10,5,2,8,-1,6,8];
+    let arrSoNguyen1 = [-8,-6,-2,-6,-1,-1,-4];
+
+    let maxNumber = findMaxScore(arrSoNguyen);
+    let maxNumber1 = findMaxScore(arrSoNguyen1);
+
+    alert(maxNumber);
+    alert(maxNumber1);
+
+</script>
+</body>
+</html>
